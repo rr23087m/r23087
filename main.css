@@ -91,3 +91,15 @@ img {
     padding: 1rem;
   }
 }
+/* --- フェードインの基本設定 --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* --- 表示されたときのスタイル --- */
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
