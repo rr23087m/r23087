@@ -1,24 +1,93 @@
+/* Google Fonts で指定したフォントを本文に使用 */
 body {
-  display: flex; /* 画面全体の配置を調整するための設定 */
-  justify-content: center; /* コンテンツを中央に配置 */
-  padding: 0px 10px; /* 画面の上下に 0px の余白、左右に10pxの余白を設定 */
+  font-family: 'Yusei Magic', sans-serif;
+  line-height: 1.8;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
+/* コンテナの中央寄せと最大幅 */
 .container {
-  max-width: 768px; /* コンテンツの最大幅を768pxに制限 */
-  width: 100%; /* コンテンツが幅いっぱいに広がるように設定 */
-  margin: 0 auto; /* コンテンツを中央に配置 */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 見出しデザイン */
+h1 {
+  font-size: 2rem;
+  color: #c0392b;
+  border-bottom: 2px solid #c0392b;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 i {
+  margin-left: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  border-left: 5px solid #2980b9;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* リストのデザイン */
+ul, ol {
+  margin-left: 2rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* リンクの装飾 */
+a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 画像のスタイル */
 img {
-  display: block; /* 画像をブロック要素に設定 */
-  margin: 0 auto; /* 画像を中央に配置 */
-  border-radius: 10px; /* 画像の角を丸く設定 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* ドロップシャドウを設定 */
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-html {
-  font-family: "Yusei Magic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* 特別セクションの装飾（元 hogehoge） */
+.section-header {
+  background-color: #ecf0f1;
+  padding: 0.5rem 1rem;
+  border-left: 5px solid #3498db;
+  margin-top: 2rem;
+}
+
+/* モバイル対応 */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
 }
