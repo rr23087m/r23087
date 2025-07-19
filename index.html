@@ -4,43 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>エネルギー機械コースの紹介</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
-  </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target); // 一度出たら監視終了
-        }
-      });
-    });
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
 
-    const elements = document.querySelectorAll(".fade-in");
-    elements.forEach((el) => observer.observe(el));
-  });
-</script>
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
   <body>
-    <class="container">
+    <div class="container">
       <!-- ここから本文開始 -->
 
       <h1 class="fade-in">エネルギー機械コースの紹介<i class="fa-solid fa-fire"></i></h1>
-      <p class="fade-in">  <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a>の<strong>エネルギー機械コース</strong>について紹介していきます。</p>
+      <p class="fade-in">
+        <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a>の<strong>エネルギー機械コース</strong>について紹介していきます。
+      </p>
       <p class="fade-in">このコースでは主に機械の構造やエネルギーについてを学習できます。</p>
       <p class="fade-in">実習では旋盤やフライス盤、ボール盤などを使い、</p> 
       <p class="fade-in">材料を加工してエンジンなどを製作しています。</p>
       <p class="fade-in">授業では製図の基礎や4力学、CADなどの機械を製作する上で基礎となる学問を学んでいます。</p>
 
-      
       <img class="fade-in" src="active.jpg" alt="実習の様子" width="90%" />
 
       <h2 class="fade-in">こんな人におすすめ</h2>
@@ -50,48 +42,51 @@
         <li>レゴで機械を作るのが好きな人</li>
         <li>時計仕掛けのものが好きな人</li>
       </ul>
-      <class="section-header">
+
+      <div class="section-header">
         <h2 class="fade-in">学べる事</h2>
       </div>
+
       <ol class="fade-in">
-        <li>
-          力学<br />熱力学、流体力学、材料力学、機械力学を学ぶことができる。これらは機械を設計する基礎であり、大学へ編入するときはこれらのテストを受ける必要がある。
-        </li>
-        <li>
-          CAD、製図<br />機械を設計または、設計図を見る際、役に立つ知識である。本校ではAUTODESKの会社のCADを無料で使えるため、会社に入る前にたくさんいじることができる。
-        </li>
-        <li>
-          実習<br />本校では設計のほかに実際に旋盤やフライス盤、ボール盤で鉄やアルミ、真鍮などを加工する。これによって、実際に加工する技術や加工がどのように行われるかが具体的に想像できるため設計がやりやすくなる。
-        </li>
-        <li>
-        そのほかにも高校の範囲の学習や大学で習う数学なども学ぶことができる。
-      　</li>
+        <li>力学<br />熱力学、流体力学、材料力学、機械力学を学ぶことができる。これらは機械を設計する基礎であり、大学へ編入するときはこれらのテストを受ける必要がある。</li>
+        <li>CAD、製図<br />機械を設計または、設計図を見る際、役に立つ知識である。本校ではAUTODESKの会社のCADを無料で使えるため、会社に入る前にたくさんいじることができる。</li>
+        <li>実習<br />本校では設計のほかに実際に旋盤やフライス盤、ボール盤で鉄やアルミ、真鍮などを加工する。これによって、実際に加工する技術や加工がどのように行われるかが具体的に想像できるため設計がやりやすくなる。</li>
+        <li>そのほかにも高校の範囲の学習や大学で習う数学なども学ぶことができる。</li>
       </ol>
-      
+
       <img class="fade-in" src="future.jpg" alt="つける職業" width="90%" />
       <h2 class="fade-in">就ける仕事</h2>
       <p class="fade-in">
         エネルギー機械コースはほかのコースよりも幅広い分野の企業につくことができる。
       </p>
       <p class="fade-in">
-        <a href="https://www.ct.omu.ac.jp/">ここ</a>に過去の就職先がある。ただ、まだエネルギー機械コースの卒業者はいなく、代わりに機械システムコースを見ていただけるとよいだろう。
+        <a href="https://www.ct.omu.ac.jp/">ここ</a>に過去の就職先がある。ただ、まだエネルギー機械コースの卒業者はいなく、代わりに機械システムコースを見ていただけるとよいだろう。<br>
         下記のようなことをする企業に入社することができる。
       </p>
       <ul class="fade-in">
-        <li>
-          生産ラインの設計
-        </li>  
-        <li>
-          乗り物の設計
-        </li>
-        <li>
-          発電施設の設計
-        </li>
-        <li>
-          精密機器の設計
-        </li>
+        <li>生産ラインの設計</li>
+        <li>乗り物の設計</li>
+        <li>発電施設の設計</li>
+        <li>精密機器の設計</li>
       </ul>
       <!-- ここまでで本文終了 -->
     </div>
+
+    <!-- JavaScriptはbodyの最後で読み込む -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((el) => observer.observe(el));
+      });
+    </script>
   </body>
 </html>
