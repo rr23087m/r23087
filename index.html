@@ -19,6 +19,24 @@
         transform: translateY(0);
       }
     </style>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          // アニメーションを再度繰り返すためにクラスを削除
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((el) => observer.observe(el));
+  });
+</script>
+
   </head>
   <body>
     <div class="container">
