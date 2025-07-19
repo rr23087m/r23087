@@ -14,31 +14,46 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // 一度出たら監視終了
+        }
+      });
+    });
+
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((el) => observer.observe(el));
+  });
+</script>
   <body>
     <class="container">
       <!-- ここから本文開始 -->
 
-      <h1>エネルギー機械コースの紹介<i class="fa-solid fa-fire"></i></h1>
-      <p>  <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a>の<strong>エネルギー機械コース</strong>について紹介していきます。</p>
-      <p>このコースでは主に機械の構造やエネルギーについてを学習できます。</p>
-      <p>実習では旋盤やフライス盤、ボール盤などを使い、</p> 
-      <p>材料を加工してエンジンなどを製作しています。</p>
-      <p>授業では製図の基礎や4力学、CADなどの機械を製作する上で基礎となる学問を学んでいます。</p>
+      <h1 class="fade-in">エネルギー機械コースの紹介<i class="fa-solid fa-fire"></i></h1>
+      <p class="fade-in">  <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a>の<strong>エネルギー機械コース</strong>について紹介していきます。</p>
+      <p class="fade-in">このコースでは主に機械の構造やエネルギーについてを学習できます。</p>
+      <p class="fade-in">実習では旋盤やフライス盤、ボール盤などを使い、</p> 
+      <p class="fade-in">材料を加工してエンジンなどを製作しています。</p>
+      <p class="fade-in">授業では製図の基礎や4力学、CADなどの機械を製作する上で基礎となる学問を学んでいます。</p>
 
       
-      <img src="active.jpg" alt="実習の様子" width="90%" />
+      <img class="fade-in" src="active.jpg" alt="実習の様子" width="90%" />
 
-      <h2>こんな人におすすめ</h2>
-      <ul>
+      <h2 class="fade-in">こんな人におすすめ</h2>
+      <ul class="fade-in">
         <li>車や船、飛行機などの乗り物が好き</li>
         <li>工場の生産ラインに興味がある</li>
         <li>レゴで機械を作るのが好きな人</li>
         <li>時計仕掛けのものが好きな人</li>
       </ul>
       <class="section-header">
-        <h2>学べる事</h2>
+        <h2 class="fade-in">学べる事</h2>
       </div>
-      <ol>
+      <ol class="fade-in">
         <li>
           力学<br />熱力学、流体力学、材料力学、機械力学を学ぶことができる。これらは機械を設計する基礎であり、大学へ編入するときはこれらのテストを受ける必要がある。
         </li>
@@ -53,16 +68,16 @@
       　</li>
       </ol>
       
-      <img src="future.jpg" alt="つける職業" width="90%" />
-      <h2>就ける仕事</h2>
-      <p>
+      <img class="fade-in" src="future.jpg" alt="つける職業" width="90%" />
+      <h2 class="fade-in">就ける仕事</h2>
+      <p class="fade-in">
         エネルギー機械コースはほかのコースよりも幅広い分野の企業につくことができる。
       </p>
-      <p>
+      <p class="fade-in">
         <a href="https://www.ct.omu.ac.jp/">ここ</a>に過去の就職先がある。ただ、まだエネルギー機械コースの卒業者はいなく、代わりに機械システムコースを見ていただけるとよいだろう。
         下記のようなことをする企業に入社することができる。
       </p>
-      <ul>
+      <ul class="fade-in">
         <li>
           生産ラインの設計
         </li>  
